@@ -1,5 +1,4 @@
 FROM alpine
-MAINTAINER Fabien Potencier <fabien.potencier@gmail.com>
 
 ENV BLACKFIRE_CONFIG /dev/null
 ENV BLACKFIRE_LOG_LEVEL 1
