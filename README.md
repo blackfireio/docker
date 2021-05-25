@@ -28,4 +28,3 @@ by comparing iterations in development, staging, and production servers.
 # How to use this Image?
 
 Please read out the [Blackfire integration documentation with Docker](https://blackfire.io/docs/up-and-running/docker).
-
