@@ -2,7 +2,7 @@ FROM alpine as bin
 
 ARG TARGETARCH=amd64
 
-ADD https://packages.blackfire.io/binaries/blackfire/2.3.0/blackfire-linux_$TARGETARCH /usr/local/bin/blackfire
+ADD https://packages.blackfire.io/binaries/blackfire/2.3.1/blackfire-linux_$TARGETARCH /usr/local/bin/blackfire
 RUN chmod 0555 /usr/local/bin/blackfire
 
 FROM alpine
