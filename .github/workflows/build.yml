@@ -20,8 +20,6 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v2
         with:
           images: blackfire/blackfire
-          flavor: |
-            latest=false
           tags: |
             type=ref,event=branch
             type=ref,event=tag
