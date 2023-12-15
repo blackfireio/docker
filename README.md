@@ -1,7 +1,7 @@
 # Quick reference
 
-* [Blackfire integration with Docker](https://blackfire.io/docs/up-and-running/docker)
-* [Blackfire tutorial on performance management](https://blackfire.io/docs/php/training-resources/book/index)
+* [Blackfire integration with Docker](https://docs.blackfire.io/up-and-running/docker)
+* [Blackfire tutorial on performance management](https://docs.blackfire.io/php/training-resources/book/index)
 * Support: support@blackfire.io
 
 # What is Blackfire?
@@ -27,4 +27,4 @@ by comparing iterations in development, staging, and production servers.
 
 # How to use this Image?
 
-Please read out the [Blackfire integration documentation with Docker](https://blackfire.io/docs/up-and-running/docker).
+Please read out the [Blackfire integration documentation with Docker](https://docs.blackfire.io/up-and-running/docker).
