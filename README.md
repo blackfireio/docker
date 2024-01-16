@@ -1,3 +1,5 @@
+This repository is the home of the `blackfire/blackfire` Docker image published on [Dockerhub](https://hub.docker.com/r/blackfire/blackfire).
+
 # Quick reference
 
 * [Blackfire integration with Docker](https://docs.blackfire.io/up-and-running/docker)
