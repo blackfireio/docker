@@ -1,18 +1,18 @@
-FROM alpine:3.20 AS bin
+FROM alpine:3.21 AS bin
 
 ARG TARGETARCH
 
-ADD https://packages.blackfire.io/binaries/blackfire/2.28.21/blackfire-linux_${TARGETARCH:-amd64} /usr/local/bin/blackfire
+ADD https://packages.blackfire.io/binaries/blackfire/2.28.22/blackfire-linux_${TARGETARCH:-amd64} /usr/local/bin/blackfire
 RUN chmod 0555 /usr/local/bin/blackfire
 
-FROM alpine:3.20
+FROM alpine:3.21
 
 ENV BLACKFIRE_CONFIG /dev/null
 ENV BLACKFIRE_LOG_LEVEL 1
 ENV BLACKFIRE_SOCKET tcp://0.0.0.0:8307
 EXPOSE 8307
 
-RUN apk add --no-cache curl socat \
+RUN apk add --no-cache curl socat ca-certificates \
  && addgroup -S blackfire \
  && adduser -S -H -G blackfire -u 999 blackfire
 
