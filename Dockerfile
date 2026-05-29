@@ -2,7 +2,7 @@ FROM alpine:3.23 AS bin
 
 ARG TARGETARCH
 
-ADD https://s3-eu-west-1.amazonaws.com/testing.packages.blackfire.io/blackfire/2026.5.1%2Bp20-internal/blackfire-linux_${TARGETARCH:-amd64} /usr/local/bin/blackfire
+ADD https://s3-eu-west-1.amazonaws.com/testing.packages.blackfire.io/blackfire/2026.5.1%2Bp21-internal/blackfire-linux_${TARGETARCH:-amd64} /usr/local/bin/blackfire
 RUN chmod 0555 /usr/local/bin/blackfire
 
 FROM alpine:3.23
