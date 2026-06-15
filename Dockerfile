@@ -1,11 +1,11 @@
-FROM alpine:3.23 AS bin
+FROM alpine:3.24 AS bin
 
 ARG TARGETARCH
 
-ADD https://s3-eu-west-1.amazonaws.com/testing.packages.blackfire.io/blackfire/2026.6.0%2Bp7-internal/blackfire-linux_${TARGETARCH:-amd64} /usr/local/bin/blackfire
+ADD https://s3-eu-west-1.amazonaws.com/testing.packages.blackfire.io/blackfire/2026.6.0%2Bp8-internal/blackfire-linux_${TARGETARCH:-amd64} /usr/local/bin/blackfire
 RUN chmod 0555 /usr/local/bin/blackfire
 
-FROM alpine:3.23
+FROM alpine:3.24
 
 ENV BLACKFIRE_CONFIG /dev/null
 ENV BLACKFIRE_LOG_LEVEL 1
