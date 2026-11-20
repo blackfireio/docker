@@ -21,7 +21,6 @@ jobs:
         with:
           images: blackfire/blackfire
           tags: |
-            type=ref,event=branch
             type=ref,event=tag
             type=raw,value=2
       -
